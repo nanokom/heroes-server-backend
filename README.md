@@ -29,12 +29,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgres
 * postgres⇒ \list //list all databases
 * postgres⇒ \c heroes //connect to database "heroes"
 
-* //create table "heroes"
+
 * heroes⇒ CREATE TABLE heroes (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar (20),
 	powers varchar (20)
-);
+); //create table "heroes"
 
 * heroes⇒ INSERT INTO heroes (name, powers) VALUES ('Thor', 'Weather manipulation');
 
