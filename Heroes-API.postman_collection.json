@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "e9de3f9d-bd21-484e-b0ec-9f1038878048",
+		"name": "Heroes-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all heroes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dev.nanokom.com:8080/heroes/getAll"
+			},
+			"response": []
+		},
+		{
+			"name": "Get hero with :id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev.nanokom.com:8080/heroes/:id",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"nanokom",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"heroes",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update hero",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Black Spider Man 321\",\r\n    \"powers\": \"Strong\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dev.nanokom.com:8080/heroes/51"
+			},
+			"response": []
+		},
+		{
+			"name": "Add hero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n        \"name\": \"Black Panther\",\r\n        \"powers\": \"Sharp claws\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dev.nanokom.com:8080/heroes"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete hero with :id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://dev.nanokom.com:8080/heroes/:id",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"nanokom",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"heroes",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "55"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search hero by :name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev.nanokom.com:8080/heroes?name=Hu",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"nanokom",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"heroes"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Hu"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
