@@ -31,7 +31,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgres
 
 
 * heroes⇒ CREATE TABLE heroes (
-	id int NOT NULL AUTO_INCREMENT,
+	id SERIAL NOT NULL,
 	name varchar (20),
 	powers varchar (20)
 ); //create table "heroes"
